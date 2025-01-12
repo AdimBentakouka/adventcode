@@ -11,3 +11,13 @@ describe("p1", () => {
     })
 })
 
+
+describe("p2", () => {
+    test("it should work for test data", async() => {
+        expect((await main('./input/example.P2.txt')).p2).toBe(48);
+    })
+
+    test("it should work for real data", async() => {
+        expect((await main('./input/source.P2.txt')).p2).toBe(100189366);
+    })
+})
